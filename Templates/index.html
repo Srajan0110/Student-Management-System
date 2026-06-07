@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f172a;
+            min-height: 100vh;
+        }
+
+        .dashboard-card {
+            background-color: #1e293b;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0px 0px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .title {
+            color: white;
+            font-weight: bold;
+        }
+
+        .student-count {
+            background-color: #334155;
+            color: #38bdf8;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .btn-custom {
+            width: 180px;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        .footer-text {
+            color: #94a3b8;
+            margin-top: 25px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center vh-100">
+
+            <div class="col-md-8 col-lg-6">
+
+                <div class="dashboard-card text-center">
+
+                    <h1 class="title">
+                        🎓 Student Management System
+                    </h1>
+
+                    <p class="text-secondary">
+                        Manage student records easily
+                    </p>
+
+                    <div class="student-count">
+
+                        <h6>Total Students</h6>
+
+                        <h2>
+                            {{ total_students }}
+                        </h2>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+
+                        <a href="/add-student"
+                            class="btn btn-primary btn-custom">
+                            Add Student
+                        </a>
+
+                        <a href="/students"
+                            class="btn btn-success btn-custom">
+                            View Students
+                        </a>
+
+                    </div>
+
+                    <p class="footer-text">
+                        Student Management Dashboard
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
